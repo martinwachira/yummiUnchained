@@ -34,7 +34,7 @@ class Home extends Component {
         <div className="card" key={item.id}>
           <br></br>
         
-          <small>Idnt: {item.id}</small>
+          {/* <small>Idnt: {item.id}</small> */}
           <div className="card-image">
             <img src={item.imgUrl} alt={item.name} />
 
