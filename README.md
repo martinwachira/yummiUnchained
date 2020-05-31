@@ -22,6 +22,7 @@ This simple shopping cart application prototype shows how we can use React and L
 #### [Frontend](https://yummi-unchained.herokuapp.com/)
 * https://yummi-unchained.herokuapp.com/
 #### [Backend-Api's](https://yupizza-backend.herokuapp.com/)
+* https://yupizza-backend.herokuapp.com/api
 
 * https://yupizza-backend.herokuapp.com/api/pizza - get pizzas
 * https://yupizza-backend.herokuapp.com/api/addcustomer - create user accounts
