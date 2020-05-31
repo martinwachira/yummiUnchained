@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Cart from './components/Cart'
+
 import RegisterCustomer from './components/RegisterCustomer'
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
             <Route path="/register-account" component={RegisterCustomer} />
 
           </Switch>
-          <footer class="page-footer">
+          <footer className="page-footer">
             &copy; 2020 Yummi Pizza App by <a target="_blank" href="https://github.com/martinwachira">Martin</a>
          </footer>
         </div>

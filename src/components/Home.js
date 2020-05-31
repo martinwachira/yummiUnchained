@@ -18,8 +18,8 @@ class Home extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:8000/api/pizza")
-    //   .get('https://yupizza-backend.herokuapp.com/api/pizza')
+    //   .get("http://localhost:8000/api/pizza")
+      .get('https://yupizza-backend.herokuapp.com/api/pizza')
       .then((res) => {
         this.setState({ items: res.data });
       })

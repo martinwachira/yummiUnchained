@@ -61,8 +61,8 @@ export default class RegisterCustomer extends Component {
       currentAddress: this.state.currentAddress,
       password: this.state.password
     };
-    axios.post('http://localhost:8000/api/addcustomer/', customer)
-    // axios.post('https://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
+    // axios.post('http://localhost:8000/api/addcustomer/', customer)
+    axios.post('https://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
       .then(res => console.log(res.data));
     Swal.fire(
   'Welcome!',
@@ -82,35 +82,35 @@ export default class RegisterCustomer extends Component {
             <hr />
           </div>
   
-          <div class="container">
-            <form class="col s12" onSubmit={this.onSubmit}>
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="name" type="text" class="validate" name="name" value={this.state.name} onChange={this.onChangeCustomerName} required/>
-                  <label for="name">Name</label>
+          <div className="container">
+            <form className="col s12" onSubmit={this.onSubmit}>
+              <div className="row">
+                <div className="input-field col s6">
+                  <input id="name" type="text" className="validate" name="name" value={this.state.name} onChange={this.onChangeCustomerName} required/>
+                  <label htmlFor="name">Name</label>
                 </div>
-                <div class="input-field col s6">
-                  <input id="email" type="email" class="validate" name="email"  value={this.state.email} onChange={this.onChangeCustomerEmail} required/>
-                  <label for="email">Email</label>
+                <div className="input-field col s6">
+                  <input id="email" type="email" className="validate" name="email"  value={this.state.email} onChange={this.onChangeCustomerEmail} required/>
+                  <label htmlFor="email">Email</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="address" type="text" class="validate" name="phoneNo"  value={this.state.currentAddress} onChange={this.onChangeCustomerCurrentAddress} required/>
-                  <label for="address">Address</label>
+              <div className="row">
+                <div className="input-field col s12">
+                  <input id="address" type="text" className="validate" name="phoneNo"  value={this.state.currentAddress} onChange={this.onChangeCustomerCurrentAddress} required/>
+                  <label htmlFor="address">Address</label>
                 </div>              
-                <div class="input-field col s12">
-                  <input id="phone" type="text" class="validate" name="currentAddress" value={this.state.phoneNo} onChange={this.onChangeCustomerPhoneNo} required/>
-                  <label for="phone">Phone</label>
+                <div className="input-field col s12">
+                  <input id="phone" type="text" className="validate" name="currentAddress" value={this.state.phoneNo} onChange={this.onChangeCustomerPhoneNo} required/>
+                  <label htmlFor="phone">Phone</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate" name="password" value={this.state.password} onChange={this.onChangeCustomerPassword} required/>
-                  <label for="password">Password</label>
+              <div className="row">
+                <div className="input-field col s12">
+                  <input id="password" type="password" className="validate" name="password" value={this.state.password} onChange={this.onChangeCustomerPassword} required/>
+                  <label htmlFor="password">Password</label>
                 </div>
               </div>            
-              <div class="row">
+              <div className="row">
                 <input type="submit" className="btn btn-primary" value="Signup" />
               </div>
             </form>
